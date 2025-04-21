@@ -286,12 +286,39 @@ h2 {
     line-height: 16px;
 }
 
+.btn-filter.active{
+    background: #2A2A2A;
+    padding: 7px 11px;
+    border-radius: 4px;
+    color: white;
+}
+
 .btn-filter:focus,
 .btn-filter:hover {
     background: #2A2A2A;
     padding: 7px 11px;
     border-radius: 4px;
     color: white;
+}
+
+.about-img{
+    display: none;
+    width: 558px;
+    height: 367px;
+}
+
+.about-img.active{
+    display: block;
+}
+
+.about-other-blocks .about-other-block{
+    display: none;
+    width: 360px;
+    height: 392px;
+}
+
+.about-other-blocks .about-other-block.active{
+    display: block;
 }
 
 .about-other-block {
