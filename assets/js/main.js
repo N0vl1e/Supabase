@@ -44,13 +44,13 @@ function showNextSlide() {
 
 setInterval(showNextSlide, 3000);
 
-
+// вкладки
 let btns = document.querySelectorAll('.btn-filter')
 let images = document.querySelectorAll('.about-img')
 let texts = document.querySelectorAll('.about-other-block')
 
-btns.forEach((btn, index)=>{
-  btn.onclick=()=>{
+btns.forEach((btn, index) => {
+  btn.onclick = () => {
     document.querySelector('.btn-filter.active').classList.remove('active')
     btn.classList.add('active')
     document.querySelector('.about-img.active').classList.remove('active')
@@ -59,3 +59,36 @@ btns.forEach((btn, index)=>{
     texts[index].classList.add('active')
   }
 })
+
+// модальные окна
+let modal_reg = document.getElementById('modal-reg')
+
+function showModalReg() {
+  modal_reg.style.display = "flex"
+}
+
+function hideModal() {
+  modal_reg.style.display = "none"
+  modal_login.style.display = "none"
+}
+
+let modal_login = document.getElementById('modal-login')
+
+function showModalLogin() {
+  modal_login.style.display = "flex"
+}
+
+modal_reg.addEventListener("click", (e) => {
+  if (e.target === modal_reg) {
+    modal_reg.style.display = "none";
+  }
+})
+
+modal_login.addEventListener("click", (e) => {
+  if (e.target === modal_login) {
+    modal_login.style.display = "none";
+  }
+})
+
+
+
