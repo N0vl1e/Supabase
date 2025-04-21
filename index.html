@@ -40,7 +40,8 @@
             </div>
             <div class="header-links">
                 <a href="#" class="btn">Start your project</a>
-                <a href="#" class="few">Sign in</a>
+                <a href="#" class="few" onclick="showModalReg()">Sign in</a>
+                <a href="#" class="few" onclick="showModalLogin()">Log in</a>
             </div>
         </div>
     </header>
@@ -370,6 +371,34 @@
         </div>
     </footer>
 
+    <div class="modal" id="modal-reg" style="display: none;">
+        <div class="registration-block">
+            <div class="title">
+                <h3>Регистрация</h3>
+                <span onclick="hideModal()">+</span>
+            </div>
+            <form>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="password" placeholder="Повторите пароль">
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="modal-login" style="display: none;">
+        <div class="login-block">
+            <div class="title">
+                <h3>Авторизация</h3>
+                <span onclick="hideModal()">+</span>
+            </div>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
